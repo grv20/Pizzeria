@@ -1,0 +1,27 @@
+ <html>
+	 <head>
+		{% block internal_css %}
+		<style type="text/css">
+			h2{
+				height: 60px;
+				color: #0000ff;
+				font-size: 32px;
+				font-family: "Courier New", Courier, monospace;
+				text-shadow: 1px 1px 1px #000000;
+				text-transform: capitalize;
+				background-color: #ffd700;
+				text-allign: center;
+				text-indent: 600px;
+				padding-top: 20px;}
+		</style>
+		{% endblock %}
+	</head>
+<h2>Welcome to Pizzeria</h2>
+<p>
+	<a href = " {% url 'pizza:index' %} "> <b>Pizzeria: Home</b></a>
+	<br />
+	<a href = " {% url 'pizza:pizzas' %} ">Pizzas</a>
+</p>
+
+</html>
+{% block content %}{% endblock content %}
